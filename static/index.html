@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FOCUS VISION</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<style>
+  	
+h1{
+    color: #0b6623;
+}
+h3{
+    color:#4f7942;
+}
+a{
+    color:#4f7942;
+}
+img {
+  width: 100%;
+}
+.header {
+  overflow: hidden;
+}
+.header-image {
+  position: relative;
+  height: 100%;
+ }
+
+ #title {
+  font-size: 100px;
+      color: white;
+            position: absolute;
+            z-index: 1; /* Bring the title to the front */
+            margin-bottom:100px;
+            margin-left: 50px;
+        }
+        .container {
+          font-size: 60px;
+          color: white;
+            position: absolute;
+            z-index: 1;
+            top: 110%; /* Move the container text below the title */
+            transform: translateY(50%); /* Center the container text vertically */
+            left: 50%; /* Center the container text horizontally */
+            transform: translate(-50%, -50%);
+            
+        }
+        #myForm{
+          color :black;
+          position: absolute;
+          z-index: 1;
+          top: 135%;
+          left:20%;
+        }
+          #myForm button {
+            padding: 10px;
+            margin: 10px;
+           font-size: 30px;
+            background-color: #0b6623;;
+            color: white;
+            border: none;
+            border-radius:10px;
+            cursor: pointer;
+                transition: transform 0.3s ease;
+          /* Adding some margin between buttons */
+        }
+
+        /* Style for the buttons on hover */
+        #myForm button:hover {
+            background-color: #45a049;
+             transform: scale(1.1); 
+        }
+           .menu {
+             right: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            text-align: center; /* Center align the menu items */
+            transition: top 0.3s; /* Add smooth transition */
+            position: fixed;
+            top: 0;
+            z-index: 1; /* Ensure the menu is above other elements */
+        }
+
+        .menu{ /* Set background color of the parent container */
+  padding: 10px;
+  margin-right: 100px;
+  margin-top: 20px;/* Add padding for spacing */
+}
+
+.menu a {
+  color: white; /* Change background color to gray */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #0b6623;
+/* Text color of the menu items */
+   /* Remove underline */
+  display: inline-block; 
+   transition: transform 0.3s ease;/* Display items horizontally */
+}
+
+.menu a:hover {
+   background-color: #45a049; /* Background color on hover */
+  text-decoration: none;
+  transform: scale(1.1);/* Text color on hover */
+}
+
+
+.menu.fixed {
+  background-color: white; /* Change background color when fixed */
+  color: black; /* Change text color when fixed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow when fixed */
+}
+
+        
+        /* Styles for service container */
+        #ser{
+            margin: 100px;
+        }
+        #services{
+            margin-bottom: 50px;
+        }
+.service-container {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+}
+
+/* Styles for each service */
+.service {
+  flex: 1 0 calc(33.33% - 20px); /* Three services per row */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  margin: 0 10px 20px 0; /* Optional: Add margin between service boxes */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+  box-sizing: border-box; 
+  transition: transform 0.3s ease;/* Include padding and border in the element's total width and height */
+}
+
+/* Change color on hover */
+.service:hover {
+  background-color: #f0f0f0; 
+  transform: scale(1.1); 
+  
+/* Change background color when hovered */
+}
+
+.hh{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.image {
+  float: left; /* Float image to the left */
+  margin-right: 20px; 
+  width:600px;
+  height: 610px;
+  /* Add margin to separate from the paragraph */
+}
+.paragraph{
+    margin-top: 50px;
+}
+
+#footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  text-align: center; 
+   /* Center align text */
+}
+#footer h1{
+    margin-bottom: 30px;
+}
+#footer{
+    background-color: #33B864;
+}
+.contact-info, .copyright {
+  margin-left: 100px; /* Add spacing between sections */
+}
+
+.contact-info h1 {
+  margin-top: 0; /* Remove default top margin */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Add margin to separate contact info */
+}
+
+a{
+  color: #fff; /* Link color */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+</style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="">HOME</a>
+        <a href="ser.html">Services</a>
+        <a href="doc.html">Doctors</a>
+<a><form action="ogapp1" method="post">
+    <input type="submit" value="Book" style="background-color: transparent; border: none; cursor: pointer;
+           padding: 0; margin: 0; color: white; font-size: 20px;">     
+</form></a>         <a href="logSign.html">login</a>
+    </div>
+    <div>
+  <p id="title" >FOCUS VISION</p>
+</div>
+<div>
+  <p class="container">Seeing the World from a New Perspective
+      <br>Get Ready to See the World</p>
+</div>
+    <form id="myForm" action="ogapp1" method="post">
+    <a href="app.html"> 
+        <button type='submit' name="app" >Book Appointment</button></a>
+</form>
+  <div class="header" id="parallex">
+    <img class="header-image" src="girl3.jpg" alt="">
+  </div>
+    
+<div id="ser">
+  <h1 id="services">Services</h1>
+  <div class="service-container">
+    <div class="service" id="t1">
+      <h3 id="h1">Cataract</h3>
+      <p>Cataract is the most common disorder known to mankind. Cataract surgeries are the most commonly performed surgeries in the world.</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+    <div class="service" id="t2">
+      <h3 id="h2">Dry Eyes</h3>
+      <p>Tears normally coat the surface of the eyes to keep them moist and comfortable. When tears are poor in quantity or quality, it causes dry eyes.</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+    <div class="service" id="t3">
+      <h3 id="h3">Contact Lenses</h3>
+      <p>These thin plastic discs correct, improve all types of defective vision. They are also used for bandaging the eye after surgery and for cosmetic purposes to change the color of the eye.</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+      <div class="service" id="t4">
+      <h3 id="h4">Glaucoma</h3>
+      <p>The eye is a fluid filled structure. The fluid inside the eyegives a normal pressure to the eye. The increase in eye pressure due to various reasons damages the nerve of the eye (optic nerve). This is glaucoma.</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+    <div class="service" id="t5">
+      <h3 id="h5">CORNEAL GRAFTING</h3>
+      <p>Cornea is the outer layer of the eye which helps focus and transmit light through the lens onto the retina</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+    <div class="service" id="t6">
+      <h3 id="h6">LASIK</h3>
+      <p>These thin plastic discs correct, improve all types of defective vision. They are also used for bandaging the eye after surgery and for cosmetic purposes to change the color of the eye.</p>
+      <a href="ser.html" style="color:#4f7942;">Read More...</a>
+    </div>
+  </div>
+  <h1 class="hh">History of this clinic</h1>
+  <div id="his">
+  <div class="content">
+    <img src="cli1.jpg" class="image">
+    <p class="paragraph">Our eye clinic has a rich history rooted in a commitment to excellence in eye care. 
+        Founded over 5 years ago by Srinivasan N, our clinic has been a pillar of the community, 
+        providing compassionate and cutting-edge eye care services to patients of all ages. <BR><br>Over the years, 
+        we have built a reputation for delivering personalized treatment plans tailored to each patient's unique needs,
+        whether they require routine eye exams, advanced surgical interventions, or specialized treatments for various 
+        eye conditions. Our team of experienced ophthalmologists, optometrists, and support staff are dedicated to 
+        upholding the highest standards of care and continually strive to stay at the forefront of advancements in eye 
+        health technology and practices. <br><br>As we look to the future, we remain committed to our founding principles of 
+        excellence, compassion, and innovation, ensuring that our patients receive the best possible eye care experience 
+        for years to come.<br><br>In addition to providing exceptional eye care services, our clinic has also been actively involved
+        in community outreach programs aimed at promoting eye health and awareness. We regularly conduct free eye screenings,
+        educational seminars, and awareness campaigns to reach
+        underserved populations and raise awareness about the importance of regular eye exams and preventive measures.<br><br>
+    Furthermore, our clinic has established strong partnerships with local hospitals, medical institutions, and charitable 
+    organizations to expand access to eye care services and facilitate collaborative research initiatives. Through these 
+    partnerships, we strive to advance the field of ophthalmology, improve patient outcomes, 
+    and contribute to the global effort to combat preventable blindness and vision impairment.</p>
+  </div>
+</div>
+  </div>
+  
+  <div id="footer">
+  <div class="contact-info">
+<h1>CONTACT US</h1>
+<p>69, Clinic Street, chennai, moondram kattalai ,</p><br>
+    <p>Kundrathur - 600069</p><br>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Focus Vision. All Rights Reserved.</p>
+  </div>
+</div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library -->
+<script>
+    function setAction(action) {
+        var form = document.getElementById("myForm");
+        if (action === 'login') {
+            form.action = "loginServlet";
+        } else if (action === 'signup') {
+            form.action = "signupServlet";
+        }
+    }
+    var zoomCount = 0; 
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+
+        // Calculate the zoom factor based on scroll position
+        var zoomFactor = 1 + scroll / 2500; // Adjust 2000 as needed for the desired zoom intensity
+
+        // Apply the zoom factor to the image width
+            $("#parallex img").css({
+                width: 100 * zoomFactor + "%"
+            });
+        //zoomCount++;
+
+        // Show Lorem Ipsum paragraphs when the zoom factor reaches 1.5
+        /*if (zoomFactor >= 2.0) {
+            $('.container p').css('display', 'block');
+        }
+        //if (zoomCount === 3) {
+            //$(window).off('scroll');
+        */
+    });
+</script>
+</body>
+
+</html>

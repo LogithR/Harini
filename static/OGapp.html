@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS VISION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+    	body {
+    background-image: url('app-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+    </style>
+</head>
+<body>
+<header class="clinic-header">
+    <h1 class="clinic-name">Focus Vision</h1>
+  
+</header>
+<div class="blur-container"></div>
+<form method="post" action="visit" ><input type="submit" name="visit" value ="visited"></form>
+<form method="post" action="visit" ><input type="submit" name="notvisit" value ="Not visited"></form>
+
+<div class="content-container">
+    <section class="appointment-section">
+        <div class="appointment-form">
+            <!-- Appointment form content here -->
+
+            <form class="form-group" method="post" action="appointment">
+  <h2>Book an Appointment</h2>
+        Name : <input type="text" id="name" name="name" required><br><br>
+        Email : <input type="email" id="email" name="email" required><br><br>
+        Phone : <input type="tel" id="phone" name="phone" required><br><br>
+        Age : <input type="text" id="age" name="age" required><br><br>
+        Doctor :
+              <select id="doctor" name="doctor" class="dropdown" required>
+            	<option value="">Select a Doctor</option>
+                <option value="N.Srinivasan">N.Srinivasan</option>
+                <option value="S.Saravanan">S.Saravanan</option>
+                <option value="M.Renuka">Renuka K</option>
+                <option value="R.Sindhu">R.Sindhu</option>
+                <option value="P.Malar">P.Malar</option>
+            </select><br><br>
+        Preferred Date : <input type="date" id="date" name="date" required><br><br>
+        Preferred Time : <input type="time" id="time" name="time" required><br><br>
+        Description : <br><textarea id="dis" name="dis" rows="4" required></textarea><br> 
+        <button type="submit">Submit</button>
+        <a href="logdoc.html">Cancel</a>
+        </form>
+    </section>
+</div>
+</body>
+</html>

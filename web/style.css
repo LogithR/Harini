@@ -1,0 +1,379 @@
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header styles */
+.clinic-header {
+    background-color: #4F7942; 
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+.clinic-name {
+    font-size: 50px;
+    color: #0D261D;
+    font-family: 'Lucida Console' ,monospace;
+}
+
+.clinic-nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.clinic-nav li {
+    margin: 0 15px;
+}
+
+.clinic-nav a {
+    font-size: 25px;
+    color: #154406; /* Change to your desired text color */
+    font-family: 'Lucida Console' ,monospace;
+}
+
+.clinic-nav a:hover {
+    color: #555; /* Change to your desired hover text color */
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg'); 
+    color: #154406;/* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for blurred background */
+
+/* Appointment form styles */
+.appointment-section {
+    padding:  0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+.appointment-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    width: 100%;
+    color: #154406;
+/* Center items vertically */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="Password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+  margin: 20px;
+    resize: vertical;
+}
+
+button {
+    background-color: #154406;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Dropdown list styles */
+.dropdown {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Dropdown option styles */
+.dropdown option {
+  padding-top: 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+}
+
+/* Dropdown option hover styles */
+.dropdown option:hover {
+  background-color: #f0f0f0;
+}
+
+#un-h{
+  margin: 0;
+  height: 50px;
+  background-color: #588157;
+}
+
+
+#footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  text-align: center; 
+}
+#footer h1{
+    margin-bottom: 30px;
+}
+#footer{
+    background-color: #33B864;
+}
+.contact-info, .copyright {
+  margin-left: 100px; /* Add spacing between sections */
+}
+
+.contact-info h1 {
+  margin-top: 0; /* Remove default top margin */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Add margin to separate contact info */
+}
+
+#mid{
+  margin:100px;
+}
+#t3{
+  margin-top: 1000px;
+}
+.content {
+  float: left; /* Float content to the left */
+ 
+}
+#lfth{
+  position: relative;
+
+}
+
+#lfth::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 7%; /* Set the width of the line to half the header width */
+  height: 5px; /* Set the height of the line */
+  background-color: #000; /* Line color */
+}
+
+.image {
+  float: right; /* Float image to the left */
+  margin-right: 20px; 
+  width:400px;
+  height: 410px;
+  /* Add margin to separate from the paragraph */
+}
+.content2 {
+  float: right; /* Float content to the left */
+ 
+}
+#t2{
+  margin-top: 500px
+}
+#t4{
+  margin-top: 1600px;
+}
+#t5{
+  margin-top: 2150px;
+}
+#t6{
+  margin-top: 2700px;
+}
+#t7{
+  margin-top: 3200px;
+}
+.image2 {
+  float: left; /* Float image to the left */
+  margin-right: 20px; 
+  width:400px;
+  height: 410px;
+  /* Add margin to separate from the paragraph */
+}
+
+#rgth{
+margin-left: 1120px;
+margin-bottom: 20px;
+}
+#rgth {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#rgth::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 50%; /* Set the width of the line to half the header width */
+  height: 5px; /* Set the height of the line */
+  background-color: #000; /* Line color */
+}
+
+#doc {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#doc::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+#sig {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#sig::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+
+
+#og {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#og::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+#con {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#con::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+#serv {
+  position: relative; /* Positioning context for the pseudo-element */
+}
+
+#serv::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+
+
+#mid1{
+  margin:50px 200px;
+}
+#mid1 h1{
+  font-size: 50px;
+}
+#mid1 h3{
+  font-size: 30px;
+  color: #a0e295;
+}
+
+.container-doc {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-doc {
+  display: block;
+  width: 350px;
+  height:350px;
+  margin: 10px
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left:10px;
+  margin-bottom:10px;
+  height: 350px;
+  width: 350px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8ec984;
+}
+
+.container-doc:hover .overlay {
+  opacity: 1;
+}
+
+.text-doc {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

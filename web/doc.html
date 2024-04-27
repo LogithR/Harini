@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS VISION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<header class="clinic-header">
+    <h1 class="clinic-name">Focus Vision</h1>
+    <nav class="clinic-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ser.html">Services</a></li>
+            <li><a href="doc.html" id="doc">DOCTORS</a></li>
+<a><form action="ogapp1" method="post">
+    <input type="submit" value="Book" style="background-color: transparent; border: none; cursor: pointer; padding: 0; margin: 0; color: 154406; text-decoration: underline; font-size: 25px;
+    font-family: 'Lucida Console' ,monospace;">
+</form></a>             <li><a href="logSign.html" >login</a></li>
+        </ul>
+    </nav>
+</header>
+
+  
+  <div id="mid1">
+    <h1> OUR CLINIC TEAM</h1>
+<table>
+    <h3>DOCTORS</h3>
+    <tr>
+    <th>
+<div class="container-doc" onclick="navigateToAppPage('Srinivasan N')">
+  <img src="male.jpg" alt="Avatar" class="image-doc" >
+          <p style="font-size: 30px;">Srinivasan N</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Srinivasan N</p><br> <br> TM.B.B.S, D.O, M.S Ophthalmology, Medical Director . <br><br> 
+        <p style="color: #243221;">Click To Book An Appoinmnet</p></div>
+  </div></div></th>
+<th>
+<div class="container-doc" onclick="navigateToAppPage('Malar V')">
+  <img src="f1.jpg" alt="Avatar" class="image-doc">
+  <p style="font-size: 30px;">Malar V</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Malar V </p><br><br>Vitreo-Retinal Surgeon <p style="color: #243221;">Click To Book An Appoinmnet</p></div>
+  </div>
+</div></th>
+<th> 
+<div class="container-doc" onclick="navigateToAppPage('Sindhu R')">
+  <img src="f1.jpg" alt="Avatar" class="image-doc">
+  <p style="font-size: 30px;">Sindhu R</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Sindhu R </p><br><br>Anaesthesiologist<p style="color: #243221;">Click To Book An Appoinmnet</p></div>
+  </div>
+</div></th></tr>
+<tr>
+    <th>
+<div class="container-doc" onclick="navigateToAppPage('Saravanan T')">
+  <img src="male.jpg" alt="Avatar" class="image-doc">
+  <p style="font-size: 30px;">Saravanan T</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Saravanan T </p><br><br> Ophthalmology<p style="color: #243221;">Click To Book An Appoinmnet</p></div>
+  </div></div></th>
+  <th>
+<div class="container-doc" onclick="navigateToAppPage('Renuka K')">
+  <img src="female.jpg" alt="Avatar" class="image-doc">
+  <p style="font-size: 30px;">Renuka K</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Renuka K </p><br><br>Corneal Surgeon<p style="color: #243221;">Click To Book An Appoinmnet</p>
+</div>
+  </div></div>
+  </th></tr>
+</table>
+</div>
+
+
+<div id="mid1">
+<table>
+    <h3>OTHERS</h3>
+    <tr>
+       <th>
+        <div class="container-doc">
+                <a href="ser.html">
+  <img src="female.jpg" alt="Avatar" class="image-doc"></a>
+  <p style="font-size: 30px;">Amudha D</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Amudha D</p><br> <br> Ophthalmic Technician<br><br> 
+  </div>
+</a>
+</div>
+    </th> 
+    <th>
+        <div class="container-doc">
+  <img src="male.jpg" alt="Avatar" class="image-doc">
+    <p style="font-size: 30px;">Kamal Y</p>
+  <div class="overlay">
+    <div class="text-doc"><p style="font-size:25px; color: #476442">Kamal Y</p><br> <br>Retina Specialist<br><br> 
+  </div></div>
+    </th> 
+    </tr>
+    
+    </table>
+</div>
+
+    <div id="footer">
+  <div class="contact-info">
+<h1>CONTACT US</h1>
+<p>69, Clinic Street, chennai, moondram kattalai ,</p><br>
+    <p>Kundrathur - 600069</p><br>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Focus Vision. All Rights Reserved.</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+function navigateToAppPage(doctorName) {
+    window.location.href = "app.html?doctor=" + encodeURIComponent(doctorName);
+}
+
+</script>
+</body>
+</html>

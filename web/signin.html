@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS VISION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+         <style type="text/css">
+        
+#log {
+  position: relative; 
+  transform :1s;
+/* Positioning context for the pseudo-element */
+}
+body {
+    background-image: url('log-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#log::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the line absolutely */
+  border-radius: 5px;
+  bottom: 0; /* Position the line at the bottom of the header */
+  left: 0; /* Position the line starting from the left */
+  width: 100%; /* Set the width of the line to half the header width */
+  height: 1px; /* Set the height of the line */
+  background-color: white; /* Line color */
+}
+
+#login-form {
+    color: white;
+    width: 500px;
+    margin: 100px auto; /* Center the form horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(5px); /* Blur effect */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+
+}
+#logform{
+    margin-left: 50px;
+        padding :10px;
+}
+#log-h1{
+    font-size: 30px;
+    margin-left : 130px;
+    margin-bottom: 0;
+}
+input[type="text"],
+input[type="Password"]{
+    width: 350px;
+}
+#log-button{
+    
+    margin-left : 130px;
+    margin-bottom: 0;
+}
+#log-a{
+    margin-left : 100px;
+    margin-bottom: 0;
+}
+    </style>
+</head>
+<body>
+
+<header class="clinic-header">
+    <h1 class="clinic-name">Focus Vision</h1>
+    <nav class="clinic-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ser.html">Services</a></li>
+            <li><a href="doc.html">DOCTORS</a></li>
+<a><form action="ogapp1" method="post">
+    <input type="submit" value="Book" style="background-color: transparent; border: none; cursor: pointer; padding: 0; margin: 0; color: 154406; text-decoration: underline; font-size: 25px;
+    font-family: 'Lucida Console' ,monospace;">
+</form></a>             <li><a href="logSign.html" id="sig">login</a></li>
+        </ul>
+    </nav>
+</header>
+<div id='login-form'>
+    <div id='logform'>
+    <form  method="post" action="signin">
+        <h3 id='log-h1'>SignIn</h3><br><br>
+        <input type='text' name="uname" required placeholder="name"> <br><br>
+        <input type='text' name="email" required placeholder="email"> <br><br>
+        <input type="Password" name="pass" required placeholder="Password"> <br><br>
+        <div id="log-button">
+        <button type="submit">SignIn</button><br><br>
+ </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

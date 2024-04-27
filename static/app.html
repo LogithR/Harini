@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS VISION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <style type="text/css">
+       .form-group{
+        margin-top: 100px;
+       }
+   </style>
+</head>
+<body>
+
+<header class="clinic-header">
+    <h1 class="clinic-name">Focus Vision</h1>
+    <nav class="clinic-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ser.html">Services</a></li>
+             <li><a href="doc.html">Doctors</a></li>
+            <li><a href="OGapp.html" id="con">Appointment</a></li>
+             <li><a href="logSign.html" >login</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="blur-container"></div>
+
+<div class="content-container">
+    <section class="appointment-section">
+        <div class="appointment-form">
+            <!-- Appointment form content here -->
+
+            <form class="form-group" method="post" action="app">
+  <h2>Book an Appointment</h2>
+        Name : <input type="text" id="name" name="name" required><br><br>
+        Email : <input type="email" id="email" name="email" required><br><br>
+        Phone : <input type="tel" id="phone" name="phone" required><br><br>
+        Age : <input type="text" id="age" name="age" required><br><br>
+        Doctor :
+           <input type="text" id="doctor" name="doctor" readonly> <br> <br>
+        Preferred Date : <input type="date" id="date" name="date" required><br><br>
+        Preferred Time : <input type="time" id="time" name="time" required><br><br>
+        Description : <br><textarea id="dis" name="dis" rows="4" required></textarea><br> 
+        <button type="submit">Submit</button>
+        </form>
+    </section>
+    <</span>
+</div>
+<script type="text/javascript">
+    window.onload = function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var doctorName = urlParams.get('doctor');
+    if (doctorName) {
+        document.getElementById('doctor').value = doctorName;
+    }
+};
+</script>
+</body>
+</html>

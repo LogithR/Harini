@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS VISION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        body {
+            background-image: url('admin-bg.jpg');
+            background-size: cover;
+        }
+
+        .appointment-section {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .appointment-form {
+            margin-bottom: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+            width: 100%;
+            color: #154406;
+        }
+    </style>
+</head>
+<body>
+
+<header class="clinic-header">
+    <h1 class="clinic-name">Focus Vision</h1>
+    <nav class="clinic-nav">
+        <ul>
+            <li><a href="admin.html">ADD/DELETE</a></li>
+            <li><form method="post" action="docReport"><input type="submit" value="Scheduling"></form></li>
+            <li><form method="post" action="appointPerDoc"><input type="submit" value="AppointPERdoc"></form></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content-container">
+    <section class="appointment-section">
+        <div class="appointment-form">
+            <form class="form-group" method="post" action="adddoc">
+                Name<input type="text" name="dname" value=""> Qualification<input type="type" name="dname" value=""> TIME<input type="text" name="">
+                <button type="submit" name="change" value="change">CHANGE</button>
+                <button type="submit" name="change" value="update">UPDATE</button>
+                
+            </form>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
